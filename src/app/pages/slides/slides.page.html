@@ -1,0 +1,18 @@
+<app-header titulo="Slides"></app-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <swiper-container pagination="true">
+    @for (slide of slides; track $index){
+      <swiper-slide class="slide-full">
+        <ion-card mode="ios">
+          <ion-img [src]="slide.img" class="slide-image"
+                   alt="Imagen del slide"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{slide.titulo}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>{{slide.desc}}</ion-card-content>
+        </ion-card>
+      </swiper-slide>
+    }
+  </swiper-container>
+</ion-content>
+

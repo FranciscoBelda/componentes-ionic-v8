@@ -1,2 +1,19 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root{
+/** Youtube **/
+--ion-color-youtube: #ff0404;
+--ion-color-youtube-rgb: 255,4,4;
+--ion-color-youtube-contrast: #ffffff;
+--ion-color-youtube-contrast-rgb: 255,255,255;
+--ion-color-youtube-shade: #e00404;
+--ion-color-youtube-tint: #ff1d1d;
+}
+.ion-color-youtube {
+  --ion-color-base: var(--ion-color-youtube) !important;
+  --ion-color-base-rgb: var(--ion-color-youtube-rgb) !important;
+  --ion-color-contrast: var(--ion-color-youtube-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-youtube-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-youtube-shade) !important;
+  --ion-color-tint: var(--ion-color-youtube-tint) !important;
+}

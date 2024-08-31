@@ -1,0 +1,42 @@
+<!-- Si no tenemos valor en título ponemos Alert page, y si si tenemos valor lo ponemos -->
+<app-header [titulo]="titulo || 'Alert Page'"></app-header>
+
+<ion-content class="ion-padding">
+
+<h2>Alert</h2>
+  <ion-button color="primary"
+              expand="full"
+              id="mostrar-alert">Mostrar Alert
+  </ion-button>
+
+  <ion-alert
+    trigger="mostrar-alert"
+    header="Título del alert"
+    subHeader="Subtítulo"
+    message="Esto es una alerta"
+    [buttons]="botonesAlert"></ion-alert>
+
+
+<h2>Alert con Input</h2>
+  <ion-button color="secondary"
+              expand="full"
+              id="mostrar-input">Mostrar Input
+  </ion-button>
+
+  <ion-alert
+    trigger="mostrar-input"
+    header="Alert con Input"
+    subHeader="Inserte el nombre"
+    [inputs]="inputs"
+    [buttons]="botonesInput"></ion-alert>
+
+  <h2>Alert con Radiobutton</h2>
+  <ion-button expand="block" id="mostrar-radio">Radio</ion-button>
+  <ion-alert
+    trigger="mostrar-radio"
+    header="Selecciona color"
+    [buttons]="radioButtons"
+    [inputs]="radioInputs"
+  ></ion-alert>
+</ion-content>
+

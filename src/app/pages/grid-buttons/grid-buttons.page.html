@@ -1,0 +1,131 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      Grid y Buttons
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="danger">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+      <ion-button color="warning">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Expand y Size</h2>
+  <h4><b>Expand</b>: Full o Block</h4>
+  <h4><b>Size</b>: Small, Medium o Large</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" size="small">Full S</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full" size="medium">Full M</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full" size="large">Full L</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" size="small">Block S</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" size="medium">Block M</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" size="large">Block L</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <h2>Fill</h2>
+    <h4><b>Fill</b>: Clear, Solid o Outline</h4>
+    <ion-row class="ion-margin-top">
+      <ion-col>
+        <ion-button routerLink="/alert" color="primary" fill="clear">
+          Alert
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button routerLink="/action-sheet" color="secondary" fill="solid">
+          A-Sheet
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button routerLink="/" color="tertiary" fill="outline">
+          Inicio
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <h2>Shape</h2>
+    <h4><b>Shape</b>: Default, o Round</h4>
+    <ion-row class="ion-margin-top">
+      <ion-col>
+        <ion-button color="primary" shape="default">
+          Default
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="primary" shape="round">
+          Default
+        </ion-button>
+      </ion-col>
+      <ion-button>
+        <ion-icon slot="icon-only" name="heart"></ion-icon>
+      </ion-button>
+      <ion-button shape="round">
+        <ion-icon slot="icon-only" name="heart"></ion-icon>
+      </ion-button>
+
+    </ion-row>
+
+  </ion-grid>
+
+<h2>Grid</h2>
+  <ion-grid fixed="true">
+    <ion-row>
+      @for(column of [1,2,3,4,5,6];track column; let i = $index){
+        <ion-col>
+          Item {{i+1}}
+        </ion-col>
+      }
+
+    </ion-row>
+  </ion-grid>
+
+  <h2>Grid responsive</h2>
+  <ion-grid fixed="true">
+    <ion-row>
+      @for (c of [1,2,3,4,5,6,7,8,9,10,11,12]; track $index){
+        <ion-col size="12" size-lg="3" size-md="4"
+                 size-sm="6" size-xs="12">
+          <ion-card>
+            <ion-img src="/assets/shapes.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>
+                Card Subtitle
+              </ion-card-subtitle>
+              <ion-card-title>Card Title</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, animi aperiam asperiores, deleniti eligendi hic           impedit maxime modi nam nemo, odio perspiciatis quaerat reprehenderit rerum sapiente tempora vel. Explicabo, recusandae!
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      }
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

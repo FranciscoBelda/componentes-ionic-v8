@@ -1,0 +1,42 @@
+[
+  {
+  "nombre": "Grid y Buttons",
+  "ruta": "/grid-buttons",
+  "icono": "grid"
+},
+  {
+    "nombre": "Alert",
+    "ruta": "/alert",
+    "icono": "logo-apple-appstore"
+  },
+  {
+  "nombre": "Action Sheet",
+  "ruta": "/action-sheet",
+  "icono": "american-football"
+},
+  {
+    "nombre": "Avatar",
+    "ruta": "/avatar",
+    "icono": "beaker"
+  },
+  {
+    "nombre": "Cards",
+    "ruta": "/cards",
+    "icono": "card"
+  },
+  {
+    "nombre": "Fab",
+    "ruta": "/fab",
+    "icono": "car"
+  },
+  {
+    "nombre": "Slides",
+    "ruta": "/slides",
+    "icono": "albums"
+  },
+  {
+    "nombre": "Slides2",
+    "ruta": "/slides2",
+    "icono": "ellipsis-horizontal-outline"
+  }
+]

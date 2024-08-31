@@ -1,0 +1,61 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Avatar</ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <ion-img src="/assets/images/chibi.jpg"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <h2>Chips</h2>
+  @for (i of [1,2,3,4,5,6,7,8]; track i){
+    <ion-chip color="primary">
+      <ion-avatar>
+        <ion-img src="/assets/images/chibi.jpg"></ion-img>
+      </ion-avatar>
+      <ion-label>Chibi</ion-label>
+    </ion-chip>
+  }
+
+
+
+  <ion-list>
+    <ion-list-header><h2>Avatar</h2></ion-list-header>
+    @for (i of [1,1,1,1];track $index){
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="/assets/images/chibi.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>Chibi Start</ion-label>
+      </ion-item>
+    }
+
+    @for (i of [1,1,1,1];track $index){
+      <ion-item >
+        <ion-avatar slot="end">
+          <ion-img src="/assets/images/chibi.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>Chibi End</ion-label>
+      </ion-item>
+    }
+
+    <ion-list-header><h2>Thumbnails</h2></ion-list-header>
+    @for (i of [1,1,1,1];  track $index){
+      <ion-item >
+        <ion-thumbnail slot="start">
+          <ion-img src="/assets/images/chibi.jpg"></ion-img>
+        </ion-thumbnail>
+        <ion-label>Chibi End</ion-label>
+      </ion-item>
+    }
+
+  </ion-list>
+
+</ion-content>

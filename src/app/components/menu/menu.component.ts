@@ -1,31 +1,26 @@
 import {Component, inject, OnInit} from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import {
-  IonButtons,
   IonContent,
   IonHeader,
-  IonIcon,
-  IonItem, IonLabel,
+  IonIcon, IonItem, IonLabel,
   IonList,
-  IonListHeader, IonMenuButton,
+  IonMenu,
+  IonMenuToggle,
   IonTitle,
   IonToolbar
-} from '@ionic/angular/standalone';
-
-
+} from "@ionic/angular/standalone";
+import {RouterLink} from "@angular/router";
 import {DataService} from "../../services/data.service";
 import {Componente} from "../../common/interfaces";
-import {RouterLink} from "@angular/router";
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.page.html',
-  styleUrls: ['./inicio.page.scss'],
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonList, IonListHeader, IonItem, IonIcon, IonLabel, RouterLink, IonButtons, IonMenuButton]
+  imports: [IonList, IonMenu, IonMenuToggle, IonHeader, IonTitle, IonToolbar, IonContent, IonIcon, IonLabel, IonItem, RouterLink]
 })
-export class InicioPage implements OnInit {
+export class MenuComponent  implements OnInit {
   private dataService: DataService = inject(DataService);
   componentes: Componente[] = [];
 

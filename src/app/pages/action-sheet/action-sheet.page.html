@@ -1,0 +1,16 @@
+<app-header titulo="Action Sheet"></app-header>
+
+<ion-content class="ion-padding">
+  <ion-button expand="full"
+              color="primary"
+              id="mostrar-action-sheet">
+    Abrir Action Sheet
+  </ion-button>
+
+  <ion-action-sheet
+    trigger="mostrar-action-sheet"
+    header="Actions"
+    backdropDismiss="true"
+    [buttons]="actionSheetButtons"></ion-action-sheet>
+
+</ion-content>

@@ -1,0 +1,51 @@
+<app-header titulo="Fab"></app-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+    @for (i of datos; track index;let index =$index){
+      <ion-item >
+        Item {{ index + 1 }}
+      </ion-item>
+    }
+
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success">
+      <ion-icon name="Add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="facebook">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="twitter">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="youtube">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button color="tiktok">
+        <ion-icon name="logo-tiktok"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="instagram">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="github">
+        <ion-icon name="logo-github"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="danger">
+    <ion-title class="ion-text-center">
+      Este es el footer
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
+

@@ -1,0 +1,54 @@
+<app-header titulo="Cards"></app-header>
+
+<ion-content class="ion-padding">
+
+  <h2>Card normal</h2>
+  <ion-card mode="ios" color="primary">
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa eligendi, esse expedita ipsum iste
+      laudantium necessitatibus nisi possimus quam quia repellendus reprehenderit soluta vitae voluptas. Facilis
+      perferendis quibusdam voluptates!
+    </ion-card-content>
+  </ion-card>
+
+  <h2>Card con marcador</h2>
+  <ion-card>
+    <ion-item color="primary">
+      <ion-icon color="light" slot="start" name="pin"></ion-icon>
+      <ion-label>Marcador</ion-label>
+    </ion-item>
+    <ion-card-content>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto consequuntur deleniti dolorem eligendi nesciunt
+      nostrum, officia quae repudiandae soluta! Dolorem eos iste magni nihil numquam odio provident rerum tempora?
+    </ion-card-content>
+  </ion-card>
+
+  <h2>Card con imagen</h2>
+  <ion-card>
+    <ion-card-header color="danger">
+      <ion-card-title>Título</ion-card-title>
+
+    </ion-card-header>
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorum hic laudantium nulla
+      voluptatibus! Architecto consectetur eum ex ipsum iure, laboriosam nobis possimus quam, quia quidem ratione, sed tempora tempore!
+    </ion-card-content>
+  </ion-card>
+
+  <h2>Card personalizada</h2>
+  <ion-card class="bg-card">
+    <ion-card-header>
+      <ion-card-title class="bg-card-title">Título</ion-card-title>
+      <ion-card-subtitle class="bg-card-subtitle">Título</ion-card-subtitle>
+
+    </ion-card-header>
+    <ion-card-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorum hic laudantium nulla
+      voluptatibus! Architecto consectetur eum ex ipsum iure, laboriosam nobis possimus quam, quia quidem ratione, sed tempora tempore!
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
