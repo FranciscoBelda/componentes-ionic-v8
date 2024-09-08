@@ -2,11 +2,12 @@ import {Component, ViewChild} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
+  IonAvatar,
   IonButton, IonButtons,
   IonContent,
-  IonHeader, IonInput, IonItem,
+  IonHeader, IonImg, IonInput, IonItem,
   IonItemDivider, IonLabel, IonList, IonListHeader,
-  IonModal,
+  IonModal, IonSearchbar,
   IonTitle,
   IonToolbar
 } from '@ionic/angular/standalone';
@@ -17,7 +18,7 @@ import {HeaderComponent} from "../../components/header/header.component";
   templateUrl: './modal.page.html',
   styleUrls: ['./modal.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderComponent, IonButton, IonItemDivider, IonModal, IonButtons, IonList, IonListHeader, IonLabel, IonItem, IonInput]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderComponent, IonButton, IonItemDivider, IonModal, IonButtons, IonList, IonListHeader, IonLabel, IonItem, IonInput, IonAvatar, IonImg, IonSearchbar]
 })
 export class ModalPage {
 
