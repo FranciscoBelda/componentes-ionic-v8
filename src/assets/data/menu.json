@@ -1,19 +1,19 @@
 [
   {
-  "nombre": "Grid y Buttons",
-  "ruta": "/grid-buttons",
-  "icono": "grid"
-},
+    "nombre": "Grid y Buttons",
+    "ruta": "/grid-buttons",
+    "icono": "grid"
+  },
   {
     "nombre": "Alert",
     "ruta": "/alert",
     "icono": "logo-apple-appstore"
   },
   {
-  "nombre": "Action Sheet",
-  "ruta": "/action-sheet",
-  "icono": "american-football"
-},
+    "nombre": "Action Sheet",
+    "ruta": "/action-sheet",
+    "icono": "american-football"
+  },
   {
     "nombre": "Avatar",
     "ruta": "/avatar",
@@ -58,5 +58,35 @@
     "nombre": "Modal",
     "ruta": "/modal",
     "icono": "phone-portrait"
-  }
+  },
+  {
+    "nombre": "Tabs",
+    "ruta": "/tabs",
+    "icono": "cog"
+  },
+  {
+    "nombre": "Refresher y Skeleton",
+    "ruta": "/refresher-skeleton",
+    "icono": "arrow-down-circle-outline"
+  },
+  {
+    "nombre": "Accordion",
+    "ruta": "/accordion",
+    "icono": "layers-outline"
+  },
+  {
+    "nombre": "Popover",
+    "ruta": "/popover",
+    "icono": "flame"
+  },
+  {
+    "nombre": "Search Bar",
+    "ruta": "/search-bar",
+    "icono": "search"
+  },{
+  "nombre": "Checkbox",
+  "ruta": "/checkbox",
+  "icono": "checkmark-circle-outline"
+}
+
 ]

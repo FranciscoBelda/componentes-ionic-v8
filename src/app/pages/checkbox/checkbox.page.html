@@ -1,0 +1,26 @@
+
+<app-header titulo="Checkbox"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Etiqueta</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Lista de checkbox</ion-list-header>
+    @for (c of data; track $index){
+      <ion-item (click)="onClick( c )">
+        <ion-label>{{ c.name }}</ion-label>
+        <ion-checkbox [(ngModel)]="c.selected"
+                      [color]="c.name"
+                      mode="ios"
+        ></ion-checkbox>
+      </ion-item>
+    }
+
+  </ion-list>
+</ion-content>
+

@@ -20,7 +20,26 @@ import {
   logoInstagram,
   logoYoutube,
   logoGithub,
-  logoTwitter, add, albums, ellipsisHorizontalOutline, list, infinite, heart, call, infiniteOutline, phonePortrait
+  logoTwitter,
+  add,
+  albums,
+  ellipsisHorizontalOutline,
+  list,
+  infinite,
+  heart,
+  call,
+  infiniteOutline,
+  phonePortrait,
+  cog,
+  person,
+  settings,
+  arrowDownCircleOutline,
+  layersOutline,
+  caretDownCircle,
+  flame,
+  personAddOutline,
+  search,
+  checkmarkCircleOutline
 } from "ionicons/icons";
 import {register} from "swiper/element/bundle";
 register();
@@ -33,8 +52,11 @@ register();
 })
 export class AppComponent {
   constructor() {
-    addIcons({grid, logoAppleAppstore, americanFootball, beaker, star, trash, shareSocial, caretForwardCircle, close, card, pin, car,
-    logoFacebook,logoTwitter,logoTiktok,logoInstagram,logoYoutube,logoGithub,add, albums, ellipsisHorizontalOutline, list, heart, call,  infinite,  infiniteOutline,
-    phonePortrait});
+    addIcons({grid, logoAppleAppstore, americanFootball, beaker, star, trash, shareSocial, caretForwardCircle,
+      close, card, pin, car,
+    logoFacebook,logoTwitter,logoTiktok,logoInstagram,logoYoutube,logoGithub,add, albums, ellipsisHorizontalOutline,
+      list, heart, call,  infinite,  infiniteOutline,
+    phonePortrait, cog, settings, person, arrowDownCircleOutline, layersOutline, caretDownCircle, flame,
+      personAddOutline, search, checkmarkCircleOutline});
   }
 }

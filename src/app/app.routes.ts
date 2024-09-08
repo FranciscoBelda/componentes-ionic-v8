@@ -58,4 +58,52 @@ export const routes: Routes = [
     path: 'modal',
     loadComponent: () => import('./pages/modal/modal.page').then( m => m.ModalPage)
   },
+  {
+    path: 'tabs',
+    loadComponent: () => import('./pages/tabs/tabs.page').then( m => m.TabsPage),
+    children: [
+      {
+        path: '',
+        redirectTo: 'account',
+        pathMatch: 'full',
+      },
+      {
+        path: 'account',
+        loadComponent: () => import('./pages/avatar/avatar.page').then( m => m.AvatarPage)
+      },
+      {
+        path: 'contact',
+        loadComponent: () => import('./pages/list/list.page').then( m => m.ListPage)
+      },
+      {
+        path: 'settings',
+        loadComponent: () => import('./pages/cards/cards.page').then( m => m.CardsPage)
+      }
+    ]
+
+  },
+  {
+    path: 'refresher-skeleton',
+    loadComponent: () => import('./pages/refresher-skeleton/refresher-skeleton.page').then( m => m.RefresherSkeletonPage)
+  },
+  {
+    path: 'accordion',
+    loadComponent: () => import('./pages/accordion/accordion.page').then( m => m.AccordionPage)
+  },
+  {
+    path: 'popover',
+    loadComponent: () => import('./pages/popover/popover.page').then( m => m.PopoverPage)
+  },
+  {
+    path: 'popover-data',
+    loadComponent: () => import('./pages/popover-data/popover-data.page').then( m => m.PopoverDataPage)
+  },
+  {
+    path: 'search-bar',
+    loadComponent: () => import('./pages/search-bar/search-bar.page').then( m => m.SearchBarPage)
+  },
+  {
+    path: 'checkbox',
+    loadComponent: () => import('./pages/checkbox/checkbox.page').then( m => m.CheckboxPage)
+  },
 ];

@@ -1,0 +1,22 @@
+<ion-header class="no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Searchbar</ion-title>
+  </ion-toolbar>
+  <ion-searchbar animated="true" (ionInput)="buscar( $event)">
+  </ion-searchbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    @for (album of albumes | filtro: textoBuscar: 'title'; track album.id){
+      <ion-item>
+        {{ album.title }}
+      </ion-item>
+    }
+
+  </ion-list>
+</ion-content>
+

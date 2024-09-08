@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Popover</ion-title>
+    <ion-buttons slot="end">
+      <ion-button id="trigger-header">
+        <ion-icon name="person-add-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-popover trigger="trigger-header">
+        <ng-template>
+          <ion-content class="ion-padding">Header Popover!</ion-content>
+        </ng-template>
+      </ion-popover>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button expand="full" (click)="presentPopover($event)">
+    <ion-icon name="person-add-outline" slot="start"></ion-icon>
+    <ion-label>Popover Controller</ion-label>
+  </ion-button>
+
+  <p>{{ message }}</p>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button id="trigger-footer">
+        <ion-icon name="person-add-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-popover trigger="trigger-footer">
+        <ng-template>
+          <ion-content class="ion-padding">Footer Popover!</ion-content>
+        </ng-template>
+      </ion-popover>
+
+    </ion-buttons>
+    <ion-title class="ion-text-center">Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
+

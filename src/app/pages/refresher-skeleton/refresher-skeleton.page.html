@@ -1,0 +1,28 @@
+<app-header titulo="Refresher y Skeleton"></app-header>
+
+<ion-content class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  @if (items.length === 0){
+    <h4 class="ion-text-center animate__animated animate__fadeIn">
+      Arrastre hacia abajo para recargar</h4>
+  } @else if (items.length > 0 && skeleton){
+    <ion-list class="animate__animated animate__fadeIn">
+      @for (i of items; track ind;let ind =$index){
+      <ion-item *ngFor="let i of items;let ind=index;">
+        Item {{ ind + 1 }}
+      </ion-item>
+      }
+    </ion-list>
+  } @else if(items.length > 0 && !skeleton){
+    <ion-list class="animate__animated animate__fadeIn">
+      @for (i of items; track ind;let ind =$index){
+        <ion-item>
+          <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+        </ion-item>
+      }
+    </ion-list>
+  }
+</ion-content>
+

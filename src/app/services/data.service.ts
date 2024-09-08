@@ -21,5 +21,9 @@ export class DataService {
     return this.http.get<ApiMoviesResult>(
       `${environment.baseUrl}/movie/popular?api_key=${environment.apiKey}&page=${page}`);
   }
+  getAlbumes() {
+    return this.http.get<any[]>('https://jsonplaceholder.typicode.com/albums');
+  }
+
 }
 
