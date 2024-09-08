@@ -1,7 +1,8 @@
 import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Componente} from "../common/interfaces";
+import {ApiMoviesResult, Componente, Usuario} from "../common/interfaces";
+import {environment} from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -13,4 +14,12 @@ export class DataService {
     return this.http.get<Componente[]>('/assets/data/menu.json');
   }
 
+  getUsers(): Observable<Usuario[]> {
+    return this.http.get<Usuario[]>('https://jsonplaceholder.typicode.com/users')
+  }
+  loadMovies(page: number): Observable<ApiMoviesResult> {
+    return this.http.get<ApiMoviesResult>(
+      `${environment.baseUrl}/movie/popular?api_key=${environment.apiKey}&page=${page}`);
+  }
 }
+

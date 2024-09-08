@@ -38,5 +38,25 @@
     "nombre": "Slides2",
     "ruta": "/slides2",
     "icono": "ellipsis-horizontal-outline"
+  },
+  {
+    "nombre": "Lists",
+    "ruta": "/list",
+    "icono": "list"
+  },
+  {
+    "nombre": "Infinite Scroll",
+    "ruta": "/infinite-scroll",
+    "icono": "infinite"
+  },
+  {
+    "nombre": "Infinite Scroll 2",
+    "ruta": "/infinite2",
+    "icono": "infinite-outline"
+  },
+  {
+    "nombre": "Modal",
+    "ruta": "/modal",
+    "icono": "phone-portrait"
   }
 ]

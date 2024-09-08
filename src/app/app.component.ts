@@ -20,7 +20,7 @@ import {
   logoInstagram,
   logoYoutube,
   logoGithub,
-  logoTwitter, add, albums, ellipsisHorizontalOutline
+  logoTwitter, add, albums, ellipsisHorizontalOutline, list, infinite, heart, call, infiniteOutline, phonePortrait
 } from "ionicons/icons";
 import {register} from "swiper/element/bundle";
 register();
@@ -34,6 +34,7 @@ register();
 export class AppComponent {
   constructor() {
     addIcons({grid, logoAppleAppstore, americanFootball, beaker, star, trash, shareSocial, caretForwardCircle, close, card, pin, car,
-    logoFacebook,logoTwitter,logoTiktok,logoInstagram,logoYoutube,logoGithub,add, albums, ellipsisHorizontalOutline});
+    logoFacebook,logoTwitter,logoTiktok,logoInstagram,logoYoutube,logoGithub,add, albums, ellipsisHorizontalOutline, list, heart, call,  infinite,  infiniteOutline,
+    phonePortrait});
   }
 }
