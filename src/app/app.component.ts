@@ -39,7 +39,7 @@ import {
   flame,
   personAddOutline,
   search,
-  checkmarkCircleOutline
+  checkmarkCircleOutline, searchOutline, calendarNumber
 } from "ionicons/icons";
 import {register} from "swiper/element/bundle";
 register();
@@ -57,6 +57,6 @@ export class AppComponent {
     logoFacebook,logoTwitter,logoTiktok,logoInstagram,logoYoutube,logoGithub,add, albums, ellipsisHorizontalOutline,
       list, heart, call,  infinite,  infiniteOutline,
     phonePortrait, cog, settings, person, arrowDownCircleOutline, layersOutline, caretDownCircle, flame,
-      personAddOutline, search, checkmarkCircleOutline});
+      personAddOutline, search, checkmarkCircleOutline, searchOutline, calendarNumber});
   }
 }

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Datetime</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="selectedMode" scrollable="true">
+      @for (mode of modes;track $index){
+        <ion-segment-button [value]="mode">
+          <ion-label>{{mode}}</ion-label>
+        </ion-segment-button>
+      }
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item id="open-modal">
+    <ion-label>Date</ion-label>
+    <ion-text slot="end">
+      {{ formattedString }}
+    </ion-text>
+  </ion-item>
+
+  <ion-modal trigger="open-modal">
+    <ng-template>
+      <ion-content>
+        <ion-datetime
+          #datetime
+          [presentation]="selectedMode"
+          size="cover"
+          first-day-of-week="1"
+          (ionChange)="dateChanged(datetime.value)"
+          showDefaultButtons="true"
+          [value]="dateValue">
+        </ion-datetime>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-datetime presentation="date" [highlightedDates]="highlightedDates"></ion-datetime>
+</ion-content>
+

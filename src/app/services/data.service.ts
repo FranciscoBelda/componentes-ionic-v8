@@ -24,6 +24,9 @@ export class DataService {
   getAlbumes() {
     return this.http.get<any[]>('https://jsonplaceholder.typicode.com/albums');
   }
+  loadUsers() {
+    return this.http.get<any[]>('https://randomuser.me/api/?results=100&seed=Progresa');
+  }
 
 }
 

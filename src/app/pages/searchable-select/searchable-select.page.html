@@ -1,0 +1,57 @@
+<app-header titulo="{{title}}"></app-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Multiple</ion-label>
+    <ion-checkbox mode="ios" slot="end" color="success" [(ngModel)]="multiple"></ion-checkbox>
+
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Item text field</ion-label>
+    <ion-input [(ngModel)]="itemTextField"></ion-input>
+  </ion-item>
+  <ion-item (click)="open()">
+    <ion-label>Select User</ion-label>
+
+    @if (selected.length) {
+      <div>
+        @for (item of selected; track $index; let last = $last) {
+          <span>
+            {{ leaf(item) }}{{ last ? "" : ", " }}
+          </span>
+        }
+      </div>
+    } @else {
+      Select
+    }
+
+    <ion-modal [isOpen]="isOpen">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+              <ion-button (click)="cancel()">Cancel</ion-button>
+            </ion-buttons>
+            <ion-title class="ion-text-center">{{ title }}</ion-title>
+            <ion-buttons slot="end">
+              <ion-button (click)="confirm()">Confirm</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+          <ion-toolbar>
+            <ion-searchbar (ionClear)="clear()" (ionInput)="filter($event)"></ion-searchbar>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          @for (item of filtered; track $index) {
+            <ion-item (click)="itemSelected(item)">
+              <ion-checkbox slot="start" [(ngModel)]="item.selected"></ion-checkbox>
+              <ion-label>{{ leaf(item) }}</ion-label>
+            </ion-item>
+          }
+
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-item>
+</ion-content>
+

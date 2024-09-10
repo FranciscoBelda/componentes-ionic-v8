@@ -106,4 +106,12 @@ export const routes: Routes = [
     path: 'checkbox',
     loadComponent: () => import('./pages/checkbox/checkbox.page').then( m => m.CheckboxPage)
   },
+  {
+    path: 'searchable-select',
+    loadComponent: () => import('./pages/searchable-select/searchable-select.page').then( m => m.SearchableSelectPage)
+  },
+  {
+    path: 'datetime',
+    loadComponent: () => import('./pages/datetime/datetime.page').then( m => m.DatetimePage)
+  },
 ];

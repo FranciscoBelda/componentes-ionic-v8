@@ -83,10 +83,20 @@
     "nombre": "Search Bar",
     "ruta": "/search-bar",
     "icono": "search"
-  },{
-  "nombre": "Checkbox",
-  "ruta": "/checkbox",
-  "icono": "checkmark-circle-outline"
+  },
+  {
+    "nombre": "Checkbox",
+    "ruta": "/checkbox",
+    "icono": "checkmark-circle-outline"
+  },
+  {
+    "nombre": "Searchable Select",
+    "ruta": "/searchable-select",
+    "icono": "search-outline"
+  }
+,{
+  "nombre": "Datetime",
+  "ruta": "/datetime",
+  "icono": "calendar-number"
 }
-
 ]
