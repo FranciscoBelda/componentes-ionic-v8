@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
+  IonBackButton,
+  IonButtons,
   IonContent, IonDatetime,
   IonHeader, IonItem,
   IonLabel, IonModal,
@@ -17,7 +19,7 @@ import {format, parseISO} from "date-fns";
   templateUrl: './datetime.page.html',
   styleUrls: ['./datetime.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonSegment, IonSegmentButton, IonLabel, IonItem, IonText, IonModal, IonDatetime]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonSegment, IonSegmentButton, IonLabel, IonItem, IonText, IonModal, IonDatetime, IonButtons, IonBackButton]
 })
 export class DatetimePage {
   modes = ['date', 'date-time', 'month', 'month-year', 'time', 'time-date', 'year'];
